@@ -3,14 +3,14 @@ import React, { useState, useRef, useEffect } from 'react';
 // import { CloudinaryContext, Transformation } from 'cloudinary-react';
 
 const CameraApp = () => {
-  const [stream, setStream] = useState(null);
+  // const [stream, setStream] = useState(null);
   const videoRef = useRef(null);
   const photoRef = useRef(null);
 
   const [hasPhoto, setHasPhoto] = useState(false);
 
-  const screenWidth = window.screen.width;
-  const screenHeight = window.screen.height;
+  // const screenWidth = window.screen.width;
+  // const screenHeight = window.screen.height;
 
   const startCamera = async () => {
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
